@@ -1,0 +1,743 @@
+@font-face {
+  font-family: rajdhani;
+  src: url("../police/Rajdhani-Medium.ttf");
+}
+
+@font-face {
+  font-family: rajdhani-light;
+  src: url("../police/Rajdhani-Light.ttf");
+}
+
+@font-face {
+  font-family: spaceGrotesk;
+  src: url("../police/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  background-image: url("../images/Home/Bathome1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: rajdhani;
+  color: #fff;
+}
+
+p,
+label {
+  font-family: spaceGrotesk;
+  color: #fff;
+}
+
+h6 {
+  font-family: rajdhani;
+  color: #fff;
+}
+
+textarea {
+  font-family: "Space Grotesk", sans-serif;
+  padding-top: 6px;
+  width: 99%;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  color: #f1f1f1;
+}
+
+select {
+  width: 100%;
+  margin: 20px 0px;
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  background-color: rgba(255, 255, 255, 0);
+  color: #c4c4c4;
+  font-size: 16px;
+  font-family: "SpaceGrotesk-Regular";
+  resize: none;
+}
+
+.hero a,
+.item-acteur .acteur {
+  background: linear-gradient(123deg, rgba(237, 222, 191, 0.5) 0%, rgba(137, 0, 9, 0.5) 90%);
+}
+
+.cart1 {
+  background: linear-gradient(123deg, rgb(237, 222, 191) 2%, rgba(39, 68, 85, 0.685) 100%);
+}
+
+header,
+.bloc-citation,
+.nav-footer,
+.hero-game,
+.quiz,
+.vertical-line {
+  border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
+  border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
+}
+
+.btn-groupe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-groupe button {
+  width: 150px;
+  height: 40px;
+  border-image: linear-gradient(160deg, hsl(0deg, 0%, 60%), hsl(198deg, 80%, 28%)) 1;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  margin: 5px;
+}
+
+.quiz .game-debut .start-btn,
+.confirm-btn button,
+#btn-start-quiz {
+  background: linear-gradient(123deg, rgb(30, 37, 47) 0%, rgb(180, 131, 70) 65%);
+  width: 280px;
+  height: 60px;
+  font-family: rajdhani;
+  color: white;
+  font-size: 22px;
+  border: none;
+  outline: none;
+}
+
+.content a img:hover,
+.logo a img:hover {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(53%) saturate(1342%) hue-rotate(358deg) brightness(103%) contrast(109%);
+}
+
+.vertical-line {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/*SM scrolling*/
+.aside {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  left: 50%;
+  z-index: 2;
+}
+
+.aside .aside-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: 0;
+}
+/*Fin SM scrolling*/
+
+/*Partie header*/
+header {
+  margin: 0 auto;
+  width: 85%;
+  border-bottom: 3px solid hsla(0deg, 1%, 45%, 0.247);
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+header .nav-menu a {
+  font-family: rajdhani;
+  color: #fff;
+  font-size: 36px;
+  margin-top: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+header .nav-menu a:hover {
+  color: #FFFF00;
+}
+
+header .nav-menu .active {
+  text-decoration: underline;
+}
+/*Fin header*/
+
+/*Hero - home*/
+.hero {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-texte {
+  margin-top: 200px;
+  margin-right: 0;
+  margin-left: 0;
+  width: 570px;
+  font-family: spaceGrotesk;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+
+.hero .titre-batman {
+  margin-top: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: spaceGrotesk;
+  font-size: 36px;
+  color: #fff;
+}
+
+.hero-btn {
+  margin-top: 30px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.hero a {
+  font-family: rajdhani;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+/*Fin - Hero home*/
+
+.fleche-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*Container home*/
+.container {
+  padding: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.ctn-paragraphe {
+  width: 800px;
+}
+
+.ctn-paragraphe p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.ctn-card {
+  margin-top: 60px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.ctn-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.item-acteur {
+  background: rgba(180, 131, 70, 0.1);
+  border-top: 1px rgba(78, 65, 29, 0.7137254902) solid;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.item-acteur .acteur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 70px;
+  border-radius: 40px;
+}
+
+.item-acteur .acteur img {
+  position: absolute;
+  width: 80px;
+  top: 7px;
+  left: 15px;
+}
+
+.item-acteur .acteur h6 {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 5px;
+  font-size: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.ctn-card {
+  height: 600px;
+}
+
+.ctn-card .item {
+  position: relative;
+}
+
+.ctn-card .item:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.ctn-card .item:hover .item-acteur {
+  visibility: visible;
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 1;
+    background-color: rgb(0, 77, 243);
+    border: 1px solid rgb(182, 0, 0);
+  }
+}
+/*Fin Container home*/
+
+.justiceLeague {
+  margin-top: 5px;
+}
+
+.hero,
+.container,
+.justiceLeague,
+.multimedia,
+.contact {
+  position: relative;
+  animation: mymove 3s;
+}
+
+@keyframes mymove {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+.multimedia {
+  margin: 0 auto;
+}
+
+.multimedia .mlt-texte {
+  padding: 60px;
+}
+
+.mlt-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.cart1 {
+  width: 600px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.cart1 h1 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 15px;
+}
+
+.cart1 h2 {
+  font-family: rajdhani;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 15px;
+}
+
+.cart1 h3 {
+  font-family: rajdhani;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.cart1 h3 span {
+  color: #FFFF00;
+}
+
+.cart1 p {
+  font-size: 12px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.bande-annonce {
+  padding: 60px;
+  position: relative;
+}
+
+.bande-annonce .play-icon {
+  width: 10%;
+  position: absolute;
+  top: 41%;
+  right: 45%;
+  cursor: pointer;
+}
+/*Fin Multimédia*/
+
+/*Formulaire*/
+#form {
+  background-image: linear-gradient(158deg, rgba(237, 222, 191, 0.4) 0%, rgba(25, 88, 125, 0.4) 60%);
+  margin-top: 150px;
+  padding-top: 40px;
+}
+
+#form div {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.titre1 {
+  text-align: center;
+}
+
+.titre {
+  font-family: rajdhani-light;
+  color: #fff;
+}
+
+.radiobtn {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+.radiobtn label {
+  border: 2px solid;
+  border-image: linear-gradient(158deg, rgba(237, 222, 191, 0.6) 0%, rgba(25, 88, 125, 0.6) 60%)10;
+  font-family: 'Rajdhani', sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.radiobtn label:hover {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.7) 30%, rgba(137, 0, 8, 1) 100%);
+}
+
+input#comics,
+input#films,
+input#tout {
+  opacity: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="email"],
+.frequence,
+textarea,
+.news {
+  display: block;
+  outline: none;
+  color: white;
+  border: initial;
+  width: 550px;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  padding: 25px 0 5px 0;
+}
+
+::placeholder {
+  color: white;
+}
+
+.invalid {
+  font-family: rajdhani;
+  font-style: italic;
+  color: red;
+}
+
+.confirmbtn input {
+  all: initial;
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 30%, rgba(137, 0, 8, 0.4) 100%);
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+  padding: 15px 40px;
+  margin: 30px auto;
+  display: block;
+  cursor: pointer;
+}
+
+.confirmbtn input:hover {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.7) 30%, rgba(137, 0, 8, 1) 100%);
+}
+
+.overlay {
+  background: linear-gradient(158deg, rgba(237, 222, 191, 0.2) 0%, rgba(25, 88, 125, 0.2) 60%), rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: none;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(158deg, rgba(237, 222, 191, 0.6) 0%, rgba(25, 88, 125, 0.6) 60%), black;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+}
+
+.popup p {
+  font-family: rajdhani;
+  text-transform: uppercase;
+}
+
+.btnClose {
+  align-self: flex-start;
+  cursor: pointer;
+  background-color: rgba(181, 2, 2, 0.784);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+/*Fin formulaire*/
+
+.citation {
+  max-width: 80%;
+  text-align: center;
+  display: block;
+}
+
+.bloc-citation {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-citation .sect-citation {
+  width: 50%;
+}
+
+.item-citation {
+  display: flex;
+  padding: 30px;
+}
+
+.item-citation2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cit2 {
+  margin: 12px;
+  font-size: 12px;
+  text-align: center;
+  width: 200px;
+}
+
+.item-citation3 {
+  justify-content: flex-end;
+}
+/*Fin Citation*/
+
+.nav-footer {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 10px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.txt-final {
+  font-size: 1.2vw;
+  line-height: 20px;
+}
+
+.txt-final>img {
+  width: 20px;
+}
+
+.bloc-icon {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon>div {
+  margin: 12px;
+}
+
+.bloc-icon>div>img {
+  width: 20px;
+  height: 20px;
+}
+/*Fin footer*/
+
+/*Game*/
+#game-body {
+  background-color: #000;
+  background-image: url("../images/Game/Batgame_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-game {
+  margin: 0 auto;
+  width: 85%;
+  color: white;
+}
+
+.hero-game h1 {
+  font-family: rajdhani;
+  font-size: 46px;
+  padding-left: 50px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.hero-game .fleche-down {
+  padding-bottom: 80px;
+}
+
+.quiz {
+  margin: 0 auto;
+  width: 75%;
+  padding: 5%;
+}
+
+.quiz .game-debut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz .game-debut h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.quiz .game-debut .game-img {
+  margin-top: 30px;
+  width: 80%;
+}
+
+.quiz .game-debut .start-btn {
+  margin-top: 50px;
+}
+
+.nav-menu a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+
+.question_bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.question_bloc .img-question {
+  width: 300px;
+}
+
+.question_bloc .questionsComposition {
+  width: 650px;
+}
+
+.question_bloc .questionsComposition div {
+  color: #fff;
+  background-color: #C4C4C4;
+  margin: 5px;
+  padding: 8px;
+}
+
+.question_bloc .questionsComposition div label {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.questions {
+  margin-top: 5%;
+}
+
+.confirm-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
